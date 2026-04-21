@@ -74,6 +74,7 @@ from hermes_agent.tools import WebSearchTool, CodeExecutionTool
 agent = HermesAgent(
     model="NousResearch/Hermes-3-Llama-3.1-70B",
     tools=[WebSearchTool(), CodeExecutionTool()],
+    max_iterations=10,  # I set this explicitly rather than relying on the default
 )
 
 result = agent.run("Write and test a Python function to calculate fibonacci numbers")
@@ -116,8 +117,13 @@ hermes-agent/
 └── main.py                # CLI entry point
 ```
 
+## My Notes
+
+Personal reminders and observations while working through this codebase:
+
+- Running against a local Ollama instance works well; set `OPENAI_BASE_URL=http://localhost:11434/v1` and `OPENAI_API_KEY=ollama`
+- The `CodeExecutionTool` runs in a subprocess — be cautious about what prompts you feed it in an unsandboxed environment
+
 ## Contributing
 
-Contributions are welcome! Please open an issue first to discuss what you'd like to change.
-
-1. Fork the repo
+Contri
