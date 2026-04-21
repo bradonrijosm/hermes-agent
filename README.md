@@ -46,7 +46,7 @@ MODEL_NAME=NousResearch/Hermes-3-Llama-3.1-70B
 
 # Agent Settings
 MAX_ITERATIONS=10
-TEMPERATURE=0.7
+TEMPERATURE=0.3  # lowered from 0.7 — I find more deterministic outputs better for tool use
 ```
 
 ### Running the Agent
@@ -121,15 +121,4 @@ Contributions are welcome! Please open an issue first to discuss what you'd like
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feat/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feat/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the Apache 2.0 License — see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [NousResearch](https://nousresearch.com/) for the original hermes-agent and Hermes model series
-- The open-source AI community
+3
