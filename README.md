@@ -47,6 +47,7 @@ MODEL_NAME=NousResearch/Hermes-3-Llama-3.1-70B
 # Agent Settings
 MAX_ITERATIONS=10
 TEMPERATURE=0.3  # lowered from 0.7 — I find more deterministic outputs better for tool use
+MAX_TOKENS=4096  # added explicit limit; default was unbounded which caused issues with some endpoints
 ```
 
 ### Running the Agent
@@ -119,6 +120,4 @@ hermes-agent/
 
 Contributions are welcome! Please open an issue first to discuss what you'd like to change.
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feat/amazing-feature`)
-3
+1. Fork the repo
