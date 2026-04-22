@@ -114,16 +114,9 @@ hermes-agent/
 ├── docker-compose.yml     # Docker configuration
 ├── Dockerfile
 ├── requirements.txt
-└── main.py                # CLI entry point
+└── .env.example
 ```
 
-## My Notes
+## Notes
 
-Personal reminders and observations while working through this codebase:
-
-- Running against a local Ollama instance works well; set `OPENAI_BASE_URL=http://localhost:11434/v1` and `OPENAI_API_KEY=ollama`
-- The `CodeExecutionTool` runs in a subprocess — be cautious about what prompts you feed it in an unsandboxed environment
-
-## Contributing
-
-Contri
+This is my personal fork for learning and experimentation. I'm primarily using it locally with [Ollama](https://ollama.com/) pointed at `OPENAI_BASE_URL=http://localhost:11434/v1`. If you're doing the same, set `OPENAI_API_KEY=ollama` (any non-empty string works).
