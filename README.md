@@ -114,9 +114,6 @@ hermes-agent/
 ├── docker-compose.yml     # Docker configuration
 ├── Dockerfile
 ├── requirements.txt
-└── .env.example
+├── .env.example
+└── main.py
 ```
-
-## Notes
-
-Personal fork — mainly using this with a local Ollama setup. If you're doing the same, set `OPENAI_BASE_URL=http://localhost:11434/v1` and `OPENAI_API_KEY=ollama` in your `.env`.
