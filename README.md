@@ -119,6 +119,4 @@ hermes-agent/
 
 ## Notes
 
-Personal fork used for learning and experimentation. Main changes from upstream:
-- Lowered default `TEMPERATURE` to `0.3` for more consistent tool-call formatting
-- Set explicit `MAX_TOKENS` limit to avoid issues with endpoints that don't handle unbounded generation well
+Personal fork — mainly using this with a local Ollama setup. If you're doing the same, set `OPENAI_BASE_URL=http://localhost:11434/v1` and `OPENAI_API_KEY=ollama` in your `.env`.
