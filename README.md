@@ -114,6 +114,9 @@ hermes-agent/
 ├── docker-compose.yml     # Docker configuration
 ├── Dockerfile
 ├── requirements.txt
-├── .env.example
-└── main.py
+└── .env.example
 ```
+
+## Notes
+
+This is my personal fork for learning and experimentation. I'm primarily using this with a local [Ollama](https://ollama.com) instance rather than the OpenAI API — set `OPENAI_BASE_URL=http://localhost:11434/v1` and `OPENAI_API_KEY=ollama` to do the same.
